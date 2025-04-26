@@ -224,6 +224,7 @@ total_trips_new %>%
 
 I used *ggplot2* to create charts, graphs and other visualization, that helped me to derive insights, and identify patterns.
 
+##Total Rides
 *Visualization to show Percentage of rides by Usertype*
 ```{r}
 total_trips_new %>%
@@ -237,9 +238,12 @@ total_trips_new %>%
     labs(title = "Percentage of Rides by User Types")
 ```
 
-```{r}
-# Let's visualize the number of rides by rider type
 
+
+
+*Let's visualize the number of rides by rider type*
+
+```{r}
 total_trips_new %>% 
   mutate(day_of_week = wday(started_at, label = TRUE)) %>% 
   group_by(usertype, day_of_week) %>% 
@@ -254,4 +258,3 @@ total_trips_new %>%
   scale_y_continuous(labels = label_comma(scale = 1/1000, suffix = "k")) +
   labs(title = "Total Number of Rides by User type")
 ```
-![Image](https://github.com/user-attachments/assets/79c7a639-1174-461d-947a-70e6cd8c36ea)
