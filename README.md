@@ -224,6 +224,19 @@ total_trips_new %>%
 
 I used *ggplot2* to create charts, graphs and other visualization, that helped me to derive insights, and identify patterns.
 
+*Visualization to show Percentage of rides by Usertype*
+```{r}
+total_trips_new %>%
+    count(usertype) %>%
+    mutate(percentage = round(n/sum(n)*100)) %>%
+    ggplot(aes(x = "", y = n, fill = usertype)) + 
+    geom_bar(stat = "identity", width = 1) +
+    coord_polar(theta = "y") +
+    geom_text(aes(label = paste0(percentage, "%")), position = position_stack(vjust = 0.5)) +
+    theme_void() +
+    labs(title = "Percentage of Rides by User Types")
+```
+
 ```{r}
 # Let's visualize the number of rides by rider type
 
