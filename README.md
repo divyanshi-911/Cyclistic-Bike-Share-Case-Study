@@ -254,4 +254,4 @@ total_trips_new %>%
   scale_y_continuous(labels = label_comma(scale = 1/1000, suffix = "k")) +
   labs(title = "Total Number of Rides by User type")
 ```
-![Image](https://github.com/user-attachments/assets/cb58c64d-006e-41b1-a39b-c3d23d7d9342)
+![Image](https://github.com/user-attachments/assets/79c7a639-1174-461d-947a-70e6cd8c36ea)
