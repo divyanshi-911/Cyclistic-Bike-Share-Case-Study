@@ -10,6 +10,7 @@ Cyclistic is a bike-share company in Chicago. In 2016, Cyclistic launched a succ
 The finance analysts at Cyclistic concluded that **annual members are much more profitable than the casual riders**. Although the pricing flexibility helps Cyclistic attract more customers, Lily Moreno, the director of marketing, is convinced that maximizing the number of annual members will be the key to future growth. Moreno believes there’s a solid opportunity in **converting casual riders into full-fledged members**, instead of focusing on all-new customers, as casual riders are already familiar with the Cyclistic program and have consciously chosen Cyclistic for their transportation needs.<br><br>
 
 ## **DATA ANALYSIS PROCESS**
+[To View Codes](https://github.com/divyanshi-911/Cyclistic-Bike-Share-Case-Study/blob/main/data-exploration-cleaning-and-analysis%20(1).ipynb)
 <br>
 
 ## **1. ASK PHASE:**
